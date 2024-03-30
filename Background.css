@@ -3,7 +3,6 @@
 // DESCRIPTION: Background animation for the website. */
 
 .css-selector {
-    position: absolute;
     background: linear-gradient(358deg, #100c55, #611396, #421aa7, #240c6d);
     background-size: cover;
     -webkit-animation: Background 36s ease infinite;
