@@ -15,8 +15,26 @@
                 margin: 0;
                 padding: 0;
                 color: white;
-                background: linear-gradient(to right, #0d0637, #19154f, #1c1861, #0c0c6a);
+                /*background: linear-gradient(to right, #0d0637, #19154f, #1c1861, #0c0c6a);*/
             }
+
+            .css-selector {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: 800% 800%;
+                background: linear-gradient(to bottom, #020470, #261e9c, #2e38a3, #6240be, #483fa7);
+                animation: Background 36s ease infinite;
+            }
+
+            @keyframes Background {
+                0% { background-position: 50% 0%; }
+                50% { background-position: 51% 100%; }
+                100% { background-position: 50% 0%; }
+            }
+
             h1{
                 font-size: 100px;
                 font-family: 'Montserrat', sans-serif;
