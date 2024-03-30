@@ -3,30 +3,13 @@
 // DESCRIPTION: Background animation for the website. */
 
 .css-selector {
-    position: absolute;
+    position: sticky;
     background: linear-gradient(358deg, #100c55, #611396, #421aa7, #240c6d);
-    background-size: auto;
-    -webkit-animation: Background 36s ease infinite;
-    -moz-animation: Background 36s ease infinite;
-    -o-animation: Background 36s ease infinite;
-    animation: Background 36s ease infinite;
+    background-size: contain;
+    animation: bg 36s ease infinite;
 }
-@-webkit-keyframes Background {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-moz-keyframes Background {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-o-keyframes Background {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@keyframes Background {
+
+@keyframes bg {
     0%{background-position:50% 0%}
     50%{background-position:51% 100%}
     100%{background-position:50% 0%}
