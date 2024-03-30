@@ -10,29 +10,25 @@
             @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
             @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap);
             /* Internal Styles */
-            body, html{
+            body, html {
                 height: 100%;
                 margin: 0;
                 padding: 0;
                 color: white;
-                /*background: linear-gradient(to right, #0d0637, #19154f, #1c1861, #0c0c6a);*/
+                background: linear-gradient(to right, #0d0637, #19154f, #1c1861, #0c0c6a);
+                animation: GradientAnimation 10s linear infinite;
             }
 
-            .css-selector {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-size: 800% 800%;
-                background: linear-gradient(to bottom, #020470, #261e9c, #2e38a3, #6240be, #483fa7);
-                animation: Background 36s ease infinite;
-            }
-
-            @keyframes Background {
-                0% { background-position: 50% 0%; }
-                50% { background-position: 51% 100%; }
-                100% { background-position: 50% 0%; }
+            @keyframes GradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
             }
 
             h1{
@@ -51,7 +47,7 @@
     </head>
 
     <body>
-        <div class="animate"> 
+        
             <header> 
                 <nav>
                     <ul style="list-style-type: none; display: flex; justify-content: space-between;">
@@ -64,6 +60,6 @@
                 <h1>  Hi, I'm <strong>Debin</strong>! </h1>
                 <p>  <strong>Computer Engineering Student</strong> at <strong>UT Arlington</strong>. </p>
             </main>
-        </div>
+       
     </body>
 </html>
