@@ -15,8 +15,47 @@
                 margin: 0;
                 padding: 0;
                 color: white;
-                background: linear-gradient(to right, #0d0637, #19154f, #1c1861, #0c0c6a);
+                background: linear-gradient(to right, #0d0637, #19154f, #1c1861, #0c0c6a, #1c1cdb);
+                -webkit-animation: GradientAnimation 10s linear infinite;
+                -moz-animation: GradientAnimation 10s linear infinite;
+                -o-animation: GradientAnimation 10s linear infinite;
                 animation: GradientAnimation 10s linear infinite;
+            }
+
+            @-webkit-keyframes GradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            @-moz-keyframes GradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            @-o-keyframes GradientAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
             }
 
             @keyframes GradientAnimation {
