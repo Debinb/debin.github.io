@@ -6,30 +6,40 @@
     <title>Debin's Portfolio</title>
     <link rel="stylesheet" href="/workspaces/debin.github.io/Background.css">
     <style>
+        /* Font imports */
         @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
         @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap);
-        body, html {
+        /* Internal Styles */
+        body, html{
             height: 100%;
             margin: 0;
             padding: 0;
+            @keyframes example {
+                from {background-color: red;}
+                to {background-color: yellow;}
+            }
+
+            body {
+                animation-name: example;
+                animation-duration: 4s;
+            }
         }   
         h1{
             font-size: 100px;
             font-family: 'Montserrat', sans-serif;
-            margin-top: 105px;
+            margin-top: 110px;
             margin-left: 150px;
         }
         p{
             font-size: 28px;
             font-family: 'Poppins', sans-serif;
-            margin-top: -50px;
+            margin-top: -60px;
             margin-left: 150px;
         }
         </style>
 </head>
 
 <body>
-    <div class="css-selector"></div>
     <header>
         <nav>
             <ul style="list-style-type: none; display: flex; justify-content: space-between;">
@@ -41,6 +51,6 @@
     <main>
         <h1>  Hi, I'm <strong>Debin</strong>! </h1>
         <p>  <strong>Computer Engineering Student</strong> at <strong>UT Arlington</strong>. </p>
-    </body>
-
-    </html>
+    </main>
+</body>
+</html>
