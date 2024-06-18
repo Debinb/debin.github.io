@@ -3450,6 +3450,16 @@ input, select, textarea {
 	}
 
 /* Banner */
+@keyframes CircuitLines {
+	from {
+		transform: translateX(-300px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
+
 
 	#banner {
 		background-attachment: fixed;
