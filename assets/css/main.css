@@ -3464,7 +3464,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #0f0a47;
-		background-image: url("../../images/circuit.jpg");
+		/* background-image: url("../../images/circuit.jpg"); */
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
