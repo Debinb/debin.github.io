@@ -3449,17 +3449,14 @@ input, select, textarea {
 		position: absolute;
 	}
 
-/* Banner */
-@keyframes CircuitLines {
-	from {
-		transform: translateX(-300px);
-	}
-	to {
-		transform: translateX(0px);
-	}
-}
-
-
+	  .anim, .anim svg {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	  }
+	  .anim path {
+		stroke-width: 2;
+	  }
 
 	#banner {
 		background-attachment: fixed;

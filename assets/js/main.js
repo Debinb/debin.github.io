@@ -3,6 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+<script src="anime.min.js"></script>
 
 (function($) {
 
@@ -240,6 +241,23 @@
 				breakpoints.on('>medium', on);
 
 			});
+
+			var pathEls = document.querySelectorAll('path');
+			for (var i = 0; i < pathEls.length; i++) {
+			var pathEl = pathEls[i];
+			var offset = anime.setDashoffset(pathEl);
+			pathEl.setAttribute('stroke-dashoffset', offset);
+			anime({
+				targets: pathEl,
+				strokeDashoffset: [offset, 0],
+				duration: 7000,
+				delay: anime.random(0, 2000),
+				loop: true,
+				direction: 'alternate',
+				easing: 'linear',
+				autoplay: true
+			});
+}
 
 	// Banner.
 		var $banner = $('#banner');
